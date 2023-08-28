@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 0)
+  (lib (name "reprapdiscount_smart_controller-altium-import")(type "KiCad")(uri "${KIPRJMOD}/reprapdiscount_smart_controller-altium-import.kicad_sym")(options "")(descr ""))
+)
