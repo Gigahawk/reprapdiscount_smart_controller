@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "reprapdiscount_smart_controller")(type "KiCad")(uri "${KIPRJMOD}/reprapdiscount_smart_controller.pretty")(options "")(descr ""))
+)
