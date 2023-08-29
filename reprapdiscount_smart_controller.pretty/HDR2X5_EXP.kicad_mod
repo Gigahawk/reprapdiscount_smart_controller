@@ -34,4 +34,9 @@
   (pad "8" thru_hole circle (at 12.62384 -5.81665) (size 1.5 1.5) (drill 0.9) (layers "*.Cu" "*.Mask") (tstamp ec309ee3-19da-4bdf-9f6f-dffe2009c4d1))
   (pad "9" thru_hole circle (at 15.16384 -3.27665) (size 1.5 1.5) (drill 0.9) (layers "*.Cu" "*.Mask") (tstamp b9bdd132-f3e4-415c-ad39-724f54b15879))
   (pad "10" thru_hole circle (at 15.16384 -5.81665) (size 1.5 1.5) (drill 0.9) (layers "*.Cu" "*.Mask") (tstamp 8fdb3d03-0806-4371-9591-8f4ded7cc8c6))
+  (model "${KIPRJMOD}/reprapdiscount_smart_controller.pretty/reprapdiscount_smart_controller.3Dshapes/30310-6002.step"
+    (offset (xyz 20.24 8.74 0.2))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 180))
+  )
 )
