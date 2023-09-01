@@ -1,0 +1,144 @@
+kibot:
+  version: 1
+
+preflight:
+  set_text_variables:
+    - name: 'REVISION'
+      command: 'git --no-pager log -1 --format="%h"'
+    - name: 'DATE'
+      command: echo "$DATE"
+    - name: 'TAG'
+      command: 'git describe --tags --abbrev=0 --exact-match 2>/dev/null; exit 0'
+
+outputs:
+
+  - name: PCBWay_gerbers
+    comment: Gerbers compatible with PCBWay
+    type: gerber
+    dir: Manufacturers/PCBWay
+    options:
+      exclude_edge_layer: true
+      exclude_pads_from_silkscreen: true
+      plot_sheet_reference: false
+      plot_footprint_refs: true
+      plot_footprint_values: false
+      force_plot_invisible_refs_vals: false
+      tent_vias: true
+      use_protel_extensions: true
+      create_gerber_job_file: false
+      disable_aperture_macros: true
+      gerber_precision: 4.6
+      use_gerber_x2_attributes: false
+      use_gerber_net_attributes: false
+      line_width: 0.1
+      subtract_mask_from_silk: true
+      inner_extension_pattern: .gp%n
+    layers:
+      - copper
+      - layer: B.Paste
+        suffix: B_Paste
+        description: Bottom solder paste
+      - layer: F.Paste
+        suffix: F_Paste
+        description: Front solder paste
+      - layer: B.Silkscreen
+        suffix: B_Silkscreen
+        description: Bottom silkscreen (artwork)
+      - layer: F.Silkscreen
+        suffix: F_Silkscreen
+        description: Front silkscreen (artwork)
+      - layer: B.Mask
+        suffix: B_Mask
+        description: Bottom soldermask (negative)
+      - layer: F.Mask
+        suffix: F_Mask
+        description: Front soldermask (negative)
+      - layer: Edge.Cuts
+        suffix: Edge_Cuts
+        description: Board shape
+  - name: PCBWay_drill
+    comment: Drill files compatible with PCBWay
+    type: excellon
+    dir: Manufacturers/PCBWay
+    options:
+      pth_and_npth_single_file: false
+      pth_id: -PTH
+      npth_id: -NPTH
+      metric_units: true
+      map: gerber
+      route_mode_for_oval_holes: false
+      output: '%f%i.%x'
+  - name: PCBWay_position
+    comment: Pick and place file, PCBWay style
+    type: position
+    dir: Manufacturers/PCBWay
+    options:
+      output: '%f_cpl_pcbway.%x'
+      format: CSV
+      units: millimeters
+      separate_files_for_front_and_back: false
+      only_smd: true
+      columns:
+      - id: Ref
+        name: Designator
+      - Val
+      - Package
+      - id: PosX
+        name: Mid X
+      - id: PosY
+        name: Mid Y
+      - id: Rot
+        name: Rotation
+      - id: Side
+        name: Layer
+  - name: PCBWay_bom
+    comment: BoM for PCBWay
+    type: bom
+    dir: Manufacturers/PCBWay
+    options:
+      output: '%f_%i_pcbway.%x'
+      ref_separator: ','
+      columns:
+      - Value
+      - References
+      - Footprint
+      - Footprint Side
+      - Footprint Type
+      - Manufacturer
+      - Manufacturer Part
+      - Digikey Part
+      - LCSC Part
+      - Mouser Part
+      - Quantity Per PCB
+      csv:
+        hide_pcb_info: false
+        hide_stats_info: false
+        quote_all: true
+      count_smd_tht: true
+
+  - name: PCBWay
+    comment: ZIP file for PCBWay
+    type: compress
+    dir: Manufacturers
+    options:
+      files:
+      - from_output: PCBWay_gerbers
+        dest: /
+      - from_output: PCBWay_drill
+        dest: /
+      - from_output: PCBWay_position
+        dest: /
+      - from_output: PCBWay_bom
+        dest: /
+
+  - name: pdf_sch_print
+    comment: Schematic in PDF format
+    type: pdf_sch_print
+    dir: Schematic
+
+  - name: boardview
+    comment: Exports the PCB in board view format.
+    type: boardview
+    dir: 'BoardView'
+    options:
+      output: '%f-%i%I%v.%x'
