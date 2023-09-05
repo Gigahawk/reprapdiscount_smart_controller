@@ -1,5 +1,6 @@
 (footprint "RES TRIMPOT" (version 20221018) (generator pcbnew)
   (layer "F.Cu")
+  (attr smd)
   (fp_text reference "REF**" (at 5.2 -5.3 -180 unlocked) (layer "F.SilkS")
       (effects (font (size 1.524 1.524) (thickness 0.254)) (justify left bottom))
     (tstamp 98be468e-ee3a-4527-bde2-bf3011e0db52)

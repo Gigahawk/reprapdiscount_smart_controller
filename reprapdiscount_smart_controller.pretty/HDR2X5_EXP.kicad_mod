@@ -1,5 +1,6 @@
 (footprint "HDR2X5_EXP" (version 20221018) (generator pcbnew)
   (layer "F.Cu")
+  (attr through_hole)
   (fp_text reference "REF**" (at 0.14259 -10.0644 unlocked) (layer "F.SilkS")
       (effects (font (size 1.524 1.524) (thickness 0.254)) (justify left bottom))
     (tstamp dc14c952-376a-46e1-913d-3afb2de671c4)

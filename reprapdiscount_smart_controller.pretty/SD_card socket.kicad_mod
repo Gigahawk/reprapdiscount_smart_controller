@@ -1,5 +1,6 @@
 (footprint "SD_card socket" (version 20221018) (generator pcbnew)
   (layer "F.Cu")
+  (attr smd)
   (fp_text reference "REF**" (at -16.1 -0.1 -90 unlocked) (layer "F.SilkS")
       (effects (font (size 1.524 1.524) (thickness 0.254)) (justify left bottom))
     (tstamp c0224a07-2f5d-4b23-a6f0-81e7c41000a2)

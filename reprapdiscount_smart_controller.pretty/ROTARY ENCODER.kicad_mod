@@ -1,5 +1,6 @@
 (footprint "ROTARY ENCODER" (version 20221018) (generator pcbnew)
   (layer "F.Cu")
+  (attr through_hole)
   (fp_text reference "REF**" (at -5.5 -0.9 unlocked) (layer "F.SilkS")
       (effects (font (size 1.524 1.524) (thickness 0.254)) (justify left bottom))
     (tstamp a389bb31-ca77-446d-abe1-a12804b57795)

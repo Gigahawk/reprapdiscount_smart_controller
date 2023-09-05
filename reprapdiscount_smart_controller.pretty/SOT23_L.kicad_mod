@@ -1,5 +1,6 @@
 (footprint "SOT23_L" (version 20221018) (generator pcbnew)
   (layer "F.Cu")
+  (attr smd)
   (fp_text reference "REF**" (at 0.7 -4.1 -180 unlocked) (layer "F.SilkS")
       (effects (font (size 1.524 1.524) (thickness 0.254)) (justify left bottom))
     (tstamp c146cc2e-d90f-422b-88fd-486d88157489)

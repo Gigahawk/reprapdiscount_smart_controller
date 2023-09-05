@@ -1,5 +1,6 @@
 (footprint "PIEZO 11MM" (version 20221018) (generator pcbnew)
   (layer "F.Cu")
+  (attr through_hole)
   (fp_text reference "REF**" (at 1.91556 2.75946 180 unlocked) (layer "F.SilkS")
       (effects (font (size 1.524 1.524) (thickness 0.254)) (justify left bottom))
     (tstamp 9ef6cc8f-f8e0-4be8-8a5d-0d28e6ed0afd)
