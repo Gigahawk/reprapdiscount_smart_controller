@@ -508,7 +508,7 @@
   ],
   "text_variables": {
     "DATE": "YYYY-MM-DD HH:MM:SS",
-    "REVISION": "REVISION",
+    "HASH": "HASH",
     "TAG": "TAG"
   }
 }

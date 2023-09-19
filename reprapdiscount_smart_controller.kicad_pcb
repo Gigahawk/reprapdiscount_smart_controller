@@ -91,7 +91,7 @@
   )
 
   (property "DATE" "YYYY-MM-DD HH:MM:SS")
-  (property "REVISION" "REVISION")
+  (property "HASH" "HASH")
   (property "TAG" "TAG")
 
   (net 0 "")
@@ -2621,7 +2621,7 @@
   (gr_text "VSS" (at 200.0011 81.7936 90) (layer "F.SilkS") (tstamp fdec4ccd-c3e1-4e6d-a29c-980c462bf833)
     (effects (font (size 1 1) (thickness 0.15) bold) (justify left))
   )
-  (gr_text "RepRapDiscount Compatible \nSmart Controller\nRevision: ${TAG} (${REVISION})\nDate: ${DATE}\n" (at 122.1511 125.1036) (layer "F.Mask") (tstamp 5219f396-085a-43b8-aae6-3bb863362175)
+  (gr_text "RepRapDiscount Compatible \nSmart Controller\nRevision: ${TAG} (${HASH})\nDate: ${DATE}\n" (at 122.1511 125.1036) (layer "F.Mask") (tstamp 5219f396-085a-43b8-aae6-3bb863362175)
     (effects (font (size 1.5 1.5) (thickness 0.3) bold) (justify left))
   )
   (gr_text "VDD" (at 204.9618 111.55235) (layer "User.1") (tstamp 059be419-2932-4e96-a57e-bd42ba56f61d)
