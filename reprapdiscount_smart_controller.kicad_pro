@@ -53,6 +53,26 @@
           "gap": 0.0,
           "via_gap": 0.0,
           "width": 0.0
+        },
+        {
+          "gap": 0.13,
+          "via_gap": 0.39,
+          "width": 0.657
+        },
+        {
+          "gap": 0.15,
+          "via_gap": 0.45,
+          "width": 0.75876
+        },
+        {
+          "gap": 0.3,
+          "via_gap": 0.9,
+          "width": 1.325
+        },
+        {
+          "gap": 0.4,
+          "via_gap": 1.2,
+          "width": 1.593
         }
       ],
       "drc_exclusions": [],
@@ -175,6 +195,7 @@
         0.0,
         0.3,
         0.5,
+        0.657,
         1.0
       ],
       "via_dimensions": [
@@ -446,6 +467,40 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "PWR",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.0,
+        "via_diameter": 0.8,
+        "via_drill": 0.5,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.13,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.657,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "USB",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -453,7 +508,24 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "PWR",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "+3V3"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "USB_D[+-]"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -501,6 +573,10 @@
     "subpart_id_separator": 0
   },
   "sheets": [
+    [
+      "11d33426-074a-4faa-9f63-eb95bcc3fbc7",
+      "Mechanical"
+    ],
     [
       "c20eb3f6-d157-43e2-84ab-82664a430dd1",
       ""
