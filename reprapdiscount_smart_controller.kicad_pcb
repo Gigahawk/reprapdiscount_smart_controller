@@ -90,6 +90,10 @@
     )
   )
 
+  (property "DATE" "YYYY-MM-DD HH:MM:SS")
+  (property "REVISION" "REVISION")
+  (property "TAG" "TAG")
+
   (net 0 "")
   (net 1 "Net-(LCD1-Vo)")
   (net 2 "+3V3")
@@ -2617,6 +2621,9 @@
   (gr_text "VSS" (at 200.0011 81.7936 90) (layer "F.SilkS") (tstamp fdec4ccd-c3e1-4e6d-a29c-980c462bf833)
     (effects (font (size 1 1) (thickness 0.15) bold) (justify left))
   )
+  (gr_text "RepRapDiscount Compatible \nSmart Controller\nRevision: ${TAG} (${REVISION})\nDate: ${DATE}\n" (at 122.1511 125.1036) (layer "F.Mask") (tstamp 5219f396-085a-43b8-aae6-3bb863362175)
+    (effects (font (size 1.5 1.5) (thickness 0.3) bold) (justify left))
+  )
   (gr_text "VDD" (at 204.9618 111.55235) (layer "User.1") (tstamp 059be419-2932-4e96-a57e-bd42ba56f61d)
     (effects (font (size 0.762 0.762) (thickness 0.127)) (justify left bottom))
   )
@@ -2719,10 +2726,8 @@
   (via (at 130.92979 111.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 00c0da4e-bf21-463c-aa9a-60bf72d71d8b))
   (via (at 94.92979 123.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 01bc2117-da22-446d-9df0-6c5cea9a90a2))
   (via (at 94.92979 129.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 01cb03f0-40df-4d4c-8023-1dbffb4cdbf7))
-  (via (at 130.92979 123.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 040aa517-3002-49ad-aaa6-d0d481a091e9))
   (via (at 82.92979 129.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 06706409-adf1-4284-a4cc-4a6bb95c4c97))
   (via (at 106.92979 123.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 0765d1c1-3ece-4d7c-9e65-39e9f63b977c))
-  (via (at 148.92979 123.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 0a7abcca-be7e-4e7d-9afc-381b0e93788b))
   (via (at 178.92979 105.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 0d1d2688-95ab-471d-ac54-3fb4efe1ee74))
   (via (at 166.92979 117.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 1308b807-741a-4f7e-a990-287ce634dfae))
   (via (at 184.92979 123.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 1614e607-b859-473d-a85a-c2e4d63d8345))
@@ -2743,10 +2748,7 @@
   (via (at 118.92979 129.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 32735f54-0da7-440e-bd49-c73f6474c888))
   (via (at 100.92979 87.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 32a72315-ec03-4a57-bbba-88c86973bb4a))
   (via (at 88.92979 93.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 33a4b2f6-bca7-4743-a70c-33356c523c97))
-  (via (at 142.92979 129.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 3515e69f-fa64-47bc-8366-1c5e674d8b97))
   (via (at 190.92979 123.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 36e295ee-142d-48eb-9c08-eaaf97d4423c))
-  (via (at 142.92979 123.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 3b0598ca-3a4b-4890-bc2d-7d7180c491d4))
-  (via (at 148.92979 129.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 3d3bd8eb-0c8b-427c-968c-9b9d22f59677))
   (via (at 220.92979 99.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 3df1e44d-a32e-4c61-9346-592f054bf848))
   (via (at 100.92979 129.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 3f66dc68-71d5-4d8b-9528-064c7ab4a13e))
   (via (at 184.92979 129.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 3f8ebf12-adf7-4839-9092-522b716e1eba))
@@ -2775,7 +2777,6 @@
   (via (at 196.92979 129.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 5f716ac9-31e5-4549-8682-e6e073702623))
   (via (at 142.92979 99.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 6219bbd8-f9a3-4e57-b8a7-1ae84e564152))
   (via (at 148.92979 87.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 625a614c-f821-4d10-b5d8-d801a7bea59a))
-  (via (at 136.92979 129.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 6513fba1-0166-4af1-9002-8d301aa21216))
   (via (at 100.92979 93.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 68f4fe87-0266-482b-b311-832d8d2bd5a4))
   (via (at 112.92979 81.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 6920ba4a-6efc-4591-8b5a-9ce1ac233a14))
   (via (at 112.92979 105.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp 6d3380e7-5589-4c54-b30f-b79c101e90db))
@@ -2816,15 +2817,12 @@
   (via (at 136.92979 87.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp a5040f78-5de7-41fe-9b65-036f10528ec1))
   (via (at 124.92979 87.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp a7334fe5-c514-455a-800b-68902e96c3f8))
   (via (at 184.92979 81.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp a8b77383-159b-46b0-825f-a52df4a29b0e))
-  (via (at 124.92979 129.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp a8d9dc2c-1501-43f1-a6a7-e28022db2782))
   (via (at 202.92979 111.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp ac6d886b-caa2-48e8-89a2-5cde7a338632))
   (via (at 208.92979 117.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp aea6088d-11c0-4fb3-b720-11efcb02a7e7))
   (via (at 160.92979 81.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp b0a49180-4e0d-4cfd-8fbb-9c0b6146f6d0))
   (via (at 178.92979 123.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp b2075d5b-5d55-4d6d-adc0-8a50118a6f04))
   (via (at 148.92979 117.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp b2dd8ddc-dca0-4e25-ac74-b767444f6b5c))
-  (via (at 154.92979 129.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp b3fe7866-779c-42d4-8843-69ef7cd0b007))
   (via (at 154.92979 111.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp b44e333f-172c-41db-a1ea-a96749a7d8ee))
-  (via (at 136.92979 123.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp b5530cb0-8823-462b-a5f6-a6ee0e0ea136))
   (via (at 142.92979 93.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp b593236e-bcda-4752-a16a-f203a9e5fb28))
   (via (at 88.92979 117.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp ba42e704-b831-4af0-8f9c-d0d5433a87ee))
   (via (at 220.92979 117.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp bb9b0cd6-9235-4adc-a786-1ce06daf5051))
@@ -2844,7 +2842,6 @@
   (via (at 94.92979 117.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp d2d498f7-ca2b-450f-9208-0e6b3c5f496a))
   (via (at 106.92979 111.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp d4741a46-4b38-455e-99ce-5f8165d442e7))
   (via (at 100.92979 111.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp d53b950c-f473-472d-ae20-e1597b30369b))
-  (via (at 130.92979 129.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp d641b0dd-0c61-40c1-abd8-4d671e28f3ae))
   (via (at 88.92979 129.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp d7027a8d-5d26-4173-ae8a-d2aff3a77351))
   (via (at 106.92979 81.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp d7153cc8-04d3-4f28-ab5c-6c0f59f69912))
   (via (at 94.92979 87.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp d7643536-faa5-45a6-ab16-35160d38eb8c))
@@ -2853,7 +2850,6 @@
   (via (at 202.92979 93.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp dbca7df6-48e9-468e-a5b0-fb62bfda150b))
   (via (at 124.92979 117.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp dca88f2a-7649-497b-8981-c6959f7322a1))
   (via (at 82.92979 117.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp e259ac56-e6fd-4bc7-bbbc-58dc73bbbd4e))
-  (via (at 124.92979 123.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp e2be824a-b94d-46e1-8ae0-587173cf17ba))
   (via (at 190.92979 81.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp e2f1872a-15ea-4ca2-8291-dee20ec6c5d1))
   (via (at 220.92979 93.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp ecb1e058-c541-41e2-8abc-6ccbc45052a9))
   (via (at 118.92979 105.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp ee4a1675-5624-48ff-9d9d-8a8edebd6359))
@@ -2862,7 +2858,6 @@
   (via (at 202.92979 105.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp f35c0888-c4b3-432e-af7c-7ced23feb6c7))
   (via (at 136.92979 117.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp f4b3ee66-c534-4cfd-9681-770813fcb4ba))
   (via (at 160.92979 123.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp f74b6eb9-8e23-4694-a631-8c1a8fd769df))
-  (via (at 154.92979 123.35611) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 6) (tstamp fe58379d-bd44-4609-9b21-651e72af85f5))
   (segment (start 167.38494 107.11976) (end 167.38494 105.42695) (width 0.3) (layer "F.Cu") (net 8) (tstamp 1f91c50b-853a-48c0-95e9-1072a89f1f75))
   (segment (start 92.3011 105.1036) (end 92.3011 110.6036) (width 0.3) (layer "F.Cu") (net 8) (tstamp 1f94b329-18cb-47c6-a4bc-2a5feb878e4f))
   (segment (start 94.00109 104.7036) (end 92.7011 104.7036) (width 0.3) (layer "F.Cu") (net 8) (tstamp 25a8b285-54a4-4f92-a332-0d45c960741e))
@@ -16983,10 +16978,8 @@
       00c0da4e-bf21-463c-aa9a-60bf72d71d8b
       01bc2117-da22-446d-9df0-6c5cea9a90a2
       01cb03f0-40df-4d4c-8023-1dbffb4cdbf7
-      040aa517-3002-49ad-aaa6-d0d481a091e9
       06706409-adf1-4284-a4cc-4a6bb95c4c97
       0765d1c1-3ece-4d7c-9e65-39e9f63b977c
-      0a7abcca-be7e-4e7d-9afc-381b0e93788b
       0d1d2688-95ab-471d-ac54-3fb4efe1ee74
       1308b807-741a-4f7e-a990-287ce634dfae
       1614e607-b859-473d-a85a-c2e4d63d8345
@@ -17007,10 +17000,7 @@
       32735f54-0da7-440e-bd49-c73f6474c888
       32a72315-ec03-4a57-bbba-88c86973bb4a
       33a4b2f6-bca7-4743-a70c-33356c523c97
-      3515e69f-fa64-47bc-8366-1c5e674d8b97
       36e295ee-142d-48eb-9c08-eaaf97d4423c
-      3b0598ca-3a4b-4890-bc2d-7d7180c491d4
-      3d3bd8eb-0c8b-427c-968c-9b9d22f59677
       3df1e44d-a32e-4c61-9346-592f054bf848
       3f66dc68-71d5-4d8b-9528-064c7ab4a13e
       3f8ebf12-adf7-4839-9092-522b716e1eba
@@ -17039,7 +17029,6 @@
       5f716ac9-31e5-4549-8682-e6e073702623
       6219bbd8-f9a3-4e57-b8a7-1ae84e564152
       625a614c-f821-4d10-b5d8-d801a7bea59a
-      6513fba1-0166-4af1-9002-8d301aa21216
       68f4fe87-0266-482b-b311-832d8d2bd5a4
       6920ba4a-6efc-4591-8b5a-9ce1ac233a14
       6d3380e7-5589-4c54-b30f-b79c101e90db
@@ -17080,15 +17069,12 @@
       a5040f78-5de7-41fe-9b65-036f10528ec1
       a7334fe5-c514-455a-800b-68902e96c3f8
       a8b77383-159b-46b0-825f-a52df4a29b0e
-      a8d9dc2c-1501-43f1-a6a7-e28022db2782
       ac6d886b-caa2-48e8-89a2-5cde7a338632
       aea6088d-11c0-4fb3-b720-11efcb02a7e7
       b0a49180-4e0d-4cfd-8fbb-9c0b6146f6d0
       b2075d5b-5d55-4d6d-adc0-8a50118a6f04
       b2dd8ddc-dca0-4e25-ac74-b767444f6b5c
-      b3fe7866-779c-42d4-8843-69ef7cd0b007
       b44e333f-172c-41db-a1ea-a96749a7d8ee
-      b5530cb0-8823-462b-a5f6-a6ee0e0ea136
       b593236e-bcda-4752-a16a-f203a9e5fb28
       ba42e704-b831-4af0-8f9c-d0d5433a87ee
       bb9b0cd6-9235-4adc-a786-1ce06daf5051
@@ -17108,7 +17094,6 @@
       d2d498f7-ca2b-450f-9208-0e6b3c5f496a
       d4741a46-4b38-455e-99ce-5f8165d442e7
       d53b950c-f473-472d-ae20-e1597b30369b
-      d641b0dd-0c61-40c1-abd8-4d671e28f3ae
       d7027a8d-5d26-4173-ae8a-d2aff3a77351
       d7153cc8-04d3-4f28-ab5c-6c0f59f69912
       d7643536-faa5-45a6-ab16-35160d38eb8c
@@ -17117,7 +17102,6 @@
       dbca7df6-48e9-468e-a5b0-fb62bfda150b
       dca88f2a-7649-497b-8981-c6959f7322a1
       e259ac56-e6fd-4bc7-bbbc-58dc73bbbd4e
-      e2be824a-b94d-46e1-8ae0-587173cf17ba
       e2f1872a-15ea-4ca2-8291-dee20ec6c5d1
       ecb1e058-c541-41e2-8abc-6ccbc45052a9
       ee4a1675-5624-48ff-9d9d-8a8edebd6359
@@ -17126,7 +17110,6 @@
       f35c0888-c4b3-432e-af7c-7ced23feb6c7
       f4b3ee66-c534-4cfd-9681-770813fcb4ba
       f74b6eb9-8e23-4694-a631-8c1a8fd769df
-      fe58379d-bd44-4609-9b21-651e72af85f5
     )
   )
 )
