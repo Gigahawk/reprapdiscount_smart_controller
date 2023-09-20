@@ -142,3 +142,21 @@ outputs:
     dir: 'BoardView'
     options:
       output: '%f-%i%I%v.%x'
+  
+  - name: bom
+    comment: Bill of materials
+    type: bom
+    dir: BOM
+    options:
+      format: CSV
+      columns:
+        - field: Description
+        - field: References
+        - field: Value
+        - field: Footprint
+        - field: Quantity Per PCB
+          name: Quantity
+        - field: Digikey
+        - field: Mouser
+        - field: LCSC
+
