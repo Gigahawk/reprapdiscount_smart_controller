@@ -81,6 +81,9 @@
     (property "Datasheet" "~" (at 52.07 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Digikey" "" (at 52.07 66.04 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (instances
       (project "reprapdiscount_smart_controller"
         (path "/c20eb3f6-d157-43e2-84ab-82664a430dd1"
@@ -106,6 +109,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 52.07 50.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Digikey" "" (at 52.07 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
@@ -135,6 +141,9 @@
     (property "Datasheet" "~" (at 52.07 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Digikey" "" (at 52.07 76.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (instances
       (project "reprapdiscount_smart_controller"
         (path "/c20eb3f6-d157-43e2-84ab-82664a430dd1"
@@ -160,6 +169,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 52.07 71.12 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Digikey" "" (at 52.07 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
@@ -189,6 +201,9 @@
     (property "Datasheet" "~" (at 52.07 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Digikey" "" (at 52.07 45.72 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (instances
       (project "reprapdiscount_smart_controller"
         (path "/c20eb3f6-d157-43e2-84ab-82664a430dd1"
@@ -214,6 +229,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 52.07 81.28 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Digikey" "" (at 52.07 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
@@ -243,6 +261,9 @@
     (property "Datasheet" "~" (at 52.07 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Digikey" "" (at 52.07 55.88 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (instances
       (project "reprapdiscount_smart_controller"
         (path "/c20eb3f6-d157-43e2-84ab-82664a430dd1"
@@ -268,6 +289,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 52.07 60.96 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Digikey" "" (at 52.07 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
