@@ -578,6 +578,30 @@
       "Mechanical"
     ],
     [
+      "672f6201-7716-4ecc-a584-a5072604b635",
+      "Buzzer"
+    ],
+    [
+      "be849d88-3024-45d5-8ff2-8e62174be24e",
+      "Connectors"
+    ],
+    [
+      "646dd6f2-7904-4b87-b757-4dce147caeb9",
+      "Buffers and Level Shifters"
+    ],
+    [
+      "6af5ec75-53ba-45c5-8ac4-f19bbadffb04",
+      "Inputs"
+    ],
+    [
+      "8f3e5f37-636a-4eca-a54a-31b4d9e7f6fa",
+      "Pico"
+    ],
+    [
+      "c0e64e47-be18-49c9-a388-94608f73e1ef",
+      "Display"
+    ],
+    [
       "c20eb3f6-d157-43e2-84ab-82664a430dd1",
       ""
     ]
