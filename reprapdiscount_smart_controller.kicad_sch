@@ -26,7 +26,7 @@
     )
     (instances
       (project "reprapdiscount_smart_controller"
-        (path "/c20eb3f6-d157-43e2-84ab-82664a430dd1" (page "1"))
+        (path "/c20eb3f6-d157-43e2-84ab-82664a430dd1" (page "2"))
       )
     )
   )
@@ -137,6 +137,6 @@
   )
 
   (sheet_instances
-    (path "/" (page "#"))
+    (path "/" (page "1"))
   )
 )
