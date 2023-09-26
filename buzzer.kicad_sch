@@ -2,7 +2,13 @@
 
   (uuid bd7482da-717d-4ff4-b697-961fea68fee2)
 
-  (paper "A4")
+  (paper "A")
+
+  (title_block
+    (title "RepRapDiscount.com Smart Controller")
+    (date "${DATE}")
+    (rev "${TAG} (${HASH})")
+  )
 
   (lib_symbols
     (symbol "Device:Buzzer" (pin_names (offset 0.0254) hide) (in_bom yes) (on_board yes)

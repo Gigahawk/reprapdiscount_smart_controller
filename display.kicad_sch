@@ -2,7 +2,13 @@
 
   (uuid 0f0a8d35-4a2d-4e73-b100-8470bd5a05d5)
 
-  (paper "A4")
+  (paper "A")
+
+  (title_block
+    (title "RepRapDiscount.com Smart Controller")
+    (date "${DATE}")
+    (rev "${TAG} (${HASH})")
+  )
 
   (lib_symbols
     (symbol "Device:C" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)

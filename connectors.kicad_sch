@@ -2,7 +2,13 @@
 
   (uuid 18aed2d2-3cc0-4dab-af66-d42083ed95f5)
 
-  (paper "A4")
+  (paper "A")
+
+  (title_block
+    (title "RepRapDiscount.com Smart Controller")
+    (date "${DATE}")
+    (rev "${TAG} (${HASH})")
+  )
 
   (lib_symbols
     (symbol "Connector:USB_A" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
