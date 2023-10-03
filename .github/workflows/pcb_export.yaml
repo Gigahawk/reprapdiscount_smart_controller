@@ -8,7 +8,9 @@ jobs:
     name: PCB fabrication files
     strategy:
       matrix:
-        project: [reprapdiscount_smart_controller]
+        project: 
+          - reprapdiscount_smart_controller
+          - reprapdiscount_ramps_controller_adapter
     env:
       KIBOT_QR_CONFIG: kibot_qr.yaml
       PROJ_NAME: ${{ matrix.project }}
